@@ -1,0 +1,396 @@
+{
+	"info": {
+		"_postman_id": "47cf0760-7146-43fe-9e63-4e03887f78c7",
+		"name": "App Registro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "OBTENER USUARIOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/usuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OBTENER USUARIOS POR ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/usuarios/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GUARDAR USUARIOS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"asdasd\",\r\n    \"clave\": \"123\",\r\n    \"username\":\"awew\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/usuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USUARIOS Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/usuarios/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR USUARIOS",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Hello\",\r\n    \"clave\": \"123\",\r\n    \"username\":\"awew\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/usuarios/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OBTENER TIPO LOGRO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/tipologro",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tipologro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OBTENER TIPOLOGRO ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/tipologro/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tipologro",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GUARDAR TIPOLOGRO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descripcion\": \"asdasd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/tipologro",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tipologro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR TIPOLOGRO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descripcion\": \"Hello\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/tipologro/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tipologro",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE TIPOLOGRO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/tipologro/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"tipologro",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OBTENER PERSONAL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/personal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OBTENER PERSONAL POR ID Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/personal/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personal",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GUARDAR PERSONAL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Jorge\",\r\n    \"apellido\": \"Alvarez\",\r\n    \"telefono\": \"telefono\",\r\n    \"direcion\": \"nueva Santa Rosa\",\r\n    \"email\": \"alvarezmolina2398@gmail.com\",\r\n    \"fechanacimiento\": \"1998-07-23\",\r\n    \"logros\" : [\r\n        {\r\n            \"descripcion\" : \"Test 1\",\r\n            \"tipologro\": 2\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/personal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GUARDAR UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Jorge\",\r\n    \"apellido\": \"Alvarez\",\r\n    \"telefono\": \"telefono\",\r\n    \"direccion\": \"nueva Santa Rosa\",\r\n    \"email\": \"alvarezmolina2398@gmail.com\",\r\n    \"fechanacimiento\": \"1998-07-23\",\r\n    \"logros\" : [\r\n        {\r\n            \"descripcion\" : \"Test 1 ACT\",\r\n            \"tipologro\": 2\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/personal/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personal",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE PERSONAL",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/personal/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personal",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
